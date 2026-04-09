@@ -20,4 +20,4 @@ def assignment_averages(students):
     return {
         a: round(sum(scores) / len(scores))
         for a, scores in assignments.items()
-    }
+    }       
