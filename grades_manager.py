@@ -4,7 +4,7 @@ def initialize_dict(name, grades):
 
 def add_student(data):
     name = input("Enter student name: ")
-    proper = name.title()   # ← clave
+    proper = name.title()   
     
     data[proper] = {}
     print(f"Student {proper} successfully added to the grades management system.")
