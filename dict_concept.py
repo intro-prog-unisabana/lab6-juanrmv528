@@ -2,7 +2,8 @@
 
 def get_config():
     return {
-        "host": "localhost",
-        "port": 8080,
-        "debug": True
+        "color_mode": "dark",
+        "width": 480,
+        "height": 480,
+        "sensitivity": 0.4
     }
