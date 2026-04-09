@@ -5,7 +5,7 @@ def employee_print(employee):
         print("Name: N/A")
         print("Age: N/A")
         print("Department: N/A")
-        print("Salary: N/A")   # ← FALTABA
+        print("Salary: N/A")   
         return
     
     print(f"Name: {employee.get('name', 'N/A')}")
