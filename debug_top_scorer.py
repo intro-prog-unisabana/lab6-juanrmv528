@@ -1,28 +1,19 @@
-scores = []
+def main():
+    scores = {}
 
-while True:
-    user_input = input("Enter player and score as 'name score' (or type 'stop' to finish):\n")
-    if user_input.lower() == "stop":
-        break
+    print("Enter player and score as 'name score' (or type 'stop' to finish):")
 
-    name, score = user_input.split()
-    score = int(score)
-    if name in scores:
-        scores[name] -= score
-    else:
-        scores[name] = score
+    while True:
+        entry = input()
+        
+        if entry == "stop":
+            break
+        
+        name, score = entry.split()
+        score = int(score)
+        
+        scores[name] = scores.get(name, 0) + score
 
-if len(scores) == 0:
-    print("No scores recorded.")
-else:
-    top_name = ""
-    top_score = 0
-    for name in scores:
-        if scores[name] < top_score:
-            top_score = scores[name]
-            top_name = name
-    print(f"Top scorer: {top_name} with {top_score} points.") 
-
-if scores:
-    top = max(scores, key=scores.get)
-    print(f"Top scorer: {top} with {scores[top]} points.")
+    if scores:
+        top = max(scores, key=scores.get)
+        print(f"Top scorer: {top} with {scores[top]} points.")
