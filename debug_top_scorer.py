@@ -21,4 +21,4 @@ else:
         if scores[name] < top_score:
             top_score = scores[name]
             top_name = name
-    print(f"Top scorer: {top_name} with {top_score} points.")
+    print(f"Top scorer: {top_name} with {top_score} points.") 
