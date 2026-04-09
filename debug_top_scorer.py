@@ -17,3 +17,5 @@ def main():
     if scores:
         top = max(scores, key=scores.get)
         print(f"Top scorer: {top} with {scores[top]} points.")
+    else:
+        print("No scores recorded.")
