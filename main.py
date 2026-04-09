@@ -18,7 +18,7 @@ def main():
         
         elif option == "2":
             for student in data:
-                printprint(f"Student {name} successfully added to the grades management system.")
+                print(f"Student {name} successfully added to the grades management system.")
         
         elif option == "3":
             names = input("Enter names separated by comma: ").split(",")
