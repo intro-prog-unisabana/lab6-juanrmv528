@@ -22,3 +22,7 @@ else:
             top_score = scores[name]
             top_name = name
     print(f"Top scorer: {top_name} with {top_score} points.") 
+
+if scores:
+    top = max(scores, key=scores.get)
+    print(f"Top scorer: {top} with {scores[top]} points.")
